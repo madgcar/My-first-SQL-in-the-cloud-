@@ -31,3 +31,11 @@ CREATE TABLE book_authors (
     CONSTRAINT fk_book FOREIGN KEY(book_id) REFERENCES books(book_id) ON DELETE CASCADE,
     CONSTRAINT fk_author FOREIGN KEY(author_id) REFERENCES authors(author_id) ON DELETE CASCADE
 );
+
+CREATE TABLE Poblacion_Uruguay (
+    Departamento VARCHAR(25) PRIMARY KEY, 
+    poblacion_total INT(30) IS NOT NULL, 
+    poblacion_infantil INT(30) IS NOT NULL,
+    poblacion_mayor INT(30) IS NOT NULL,
+    ProP_Mujeres VARCHAR(4)
+);
